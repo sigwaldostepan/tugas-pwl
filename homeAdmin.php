@@ -9,8 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styleku.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="bootstrap/jquery/jquery-3.7.1.min.js"></script>
-
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 <?php
@@ -19,8 +18,8 @@ require "fungsi.php";
 require "head.html";
 
 //cek logout
-if (!isset($_SESSION['username'])){
-	header("location:index1.php");
+if (!isset($_SESSION['iduser'])){
+	header("location:index.php");
 	exit;
 }
 ?>
