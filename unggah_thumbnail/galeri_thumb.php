@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     switch ($imageFileType) {
         case 'jpg':
-            $src = imagecreatefromjpg($target_file);
+            $src = imagecreatefromjpeg($target_file);
             break;
         case 'jpeg':
             $src = imagecreatefromjpeg($target_file);
